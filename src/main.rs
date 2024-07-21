@@ -4,9 +4,17 @@ struct Cell {
     visited: bool,
     walls: [bool; 4], // murs : [nord, sud, est, ouest]
 }
-fn main() ->() {
-    println!("test du premier algo de Maze appeller \"Prim\"");
+impl Cell {
+    fn new() -> Self{
+        Cell {
+            visited:false,
+            walls:[true,true,true,true],
+        }
+    }
 }
-fn GenerateMaze(width:u32, height:u32) ->() {
+fn main() ->() {
+    println!("nothing here");
+}
+fn generate_maze(width:u32, height:u32) ->() {
     //let grille = thread_rng().gen(i32);
 }
